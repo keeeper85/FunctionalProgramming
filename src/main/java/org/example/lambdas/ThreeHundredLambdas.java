@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ThreeHundredLambdas {
 
     static int buffMultiplier = 1;
-    final static int bossHP = 10000;
+    final static int bossHP = 30000;
     final static int enemyArmySize = 100000;
 
     public static void main(String[] args) {
@@ -41,6 +41,66 @@ public class ThreeHundredLambdas {
             lambdaHeroes.add(hero10);
         LambdaWizard hero11 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
             lambdaHeroes.add(hero11);
+        LambdaCleric hero12 = () -> buffUp();
+            lambdaHeroes.add(hero12);
+        LambdaWarrior hero13 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero13);
+        LambdaWizard hero14 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero14);
+        LambdaWarrior hero15 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero15);
+        LambdaWarrior hero16 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero16);
+        LambdaWizard hero17 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero17);
+        LambdaWizard hero18 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero18);
+        LambdaWarrior hero19 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero19);
+        LambdaWizard hero20 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero20);
+        LambdaWarrior hero21 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero21);
+        LambdaCleric hero22 = () -> buffUp();
+            lambdaHeroes.add(hero22);
+        LambdaWizard hero23 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero23);
+        LambdaWizard hero24 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero24);
+        LambdaWizard hero25 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero25);
+        LambdaWarrior hero26 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero26);
+        LambdaWizard hero27 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero27);
+        LambdaWizard hero28 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero28);
+        LambdaWarrior hero29 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero29);
+        LambdaWizard hero30 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero30);
+        LambdaWizard hero31 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero31);
+        LambdaWarrior hero32 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero32);
+        LambdaWarrior hero33 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero33);
+        LambdaWizard hero34 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero34);
+        LambdaCleric hero35 = () -> buffUp();
+            lambdaHeroes.add(hero35);
+        LambdaWarrior hero36 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero36);
+        LambdaWarrior hero37 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero37);
+        LambdaWizard hero38 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero38);
+        LambdaWizard hero39 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero39);
+        LambdaWizard hero40 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero40);
+        LambdaWarrior hero41 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero41);
 
 
 
@@ -107,7 +167,7 @@ public class ThreeHundredLambdas {
 
     static void report(Target target, int damage){
         if (target.equals(Target.OVERLORD)) System.out.println(" -->Król Lich stracił " + damage + " punktów życia!");
-        else System.out.println(" -->Armia ciemności straciła " + damage + " nieumarłych żołnierzy!");
+        else System.out.println(" -->Siły ciemności straciły " + damage + " nieumarłych żołnierzy!");
     }
 
     static void finalReport(ArmyOfDarkness army, List<LambdaHero> heroes){

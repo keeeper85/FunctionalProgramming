@@ -1,5 +1,7 @@
 package org.example.lambdas;
 
+import java.util.*;
+
 public class BirthOfLambda {
 
     public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class BirthOfLambda {
             }
         };
 
-        DoubleParametrizedFunctionReturningString makingLambdaStep_1 = (String first, String second) -> "";
+        DoubleParametrizedFunctionReturningString makingLambdaStep_1 = (String first, String second) -> {return first + " " + second;};
 
         DoubleParametrizedFunctionReturningString makingLambdaStep_2 = (String first, String second) -> first + " " + second;
 
@@ -19,7 +21,7 @@ public class BirthOfLambda {
 
 
 
-        /*SomeFunction voidFunction = () -> System.out.println("1. Metoda bez parametrów, nic nie zwraca.");
+        SomeFunction voidFunction = () -> System.out.println("1. Metoda bez parametrów, nic nie zwraca.");
         voidFunction.someMethod();
 
         StringReturningFunction stringFunction = () -> "2. Metoda bez parametrów, zwraca Stringa.";
@@ -32,7 +34,7 @@ public class BirthOfLambda {
         doubleFunction.linkStrings("4. Metoda z 2 parametrami,", "nic nie zwraca.");
 
         DoubleParametrizedFunctionReturningString doubleFunctionReturning = (bla1, bla2) -> bla1 + " " + bla2;
-        System.out.println(doubleFunctionReturning.mergeStrings("5. Metoda z 2 parametrami,", "zwraca Stringa."));*/
+        System.out.println(doubleFunctionReturning.mergeStrings("5. Metoda z 2 parametrami,", "zwraca Stringa."));
     }
 
     interface DoubleParametrizedFunctionReturningString{
@@ -54,5 +56,6 @@ public class BirthOfLambda {
     interface SomeFunction{
         void someMethod();
     }
+
 
 }
