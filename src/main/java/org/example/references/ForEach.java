@@ -10,14 +10,17 @@ public class ForEach {
 
     public static void main(String[] args) {
         for (int i = 0; i < 20; i++) {
-            new StringObject();
-        }
+            new StringObject();}
 
-//        for (StringObject stringObject : stringObjects) {
-//            System.out.println(stringObject);
-//        }
+        /*for (StringObject stringObject : stringObjects) {
+            stringObject.removeUndersores();
+            stringObject.replaceSpaceWithDoubleColon();
+            stringObject.changeHouseToBunny();
+            System.out.println(stringObject);}*/
 
-        stringObjects.forEach(StringObject::replaceHouseToBunny);
+        stringObjects.forEach(StringObject::removeUndersores);
+        stringObjects.forEach(StringObject::replaceSpaceWithDoubleColon);
+        stringObjects.forEach(StringObject::changeHouseToBunny);
         stringObjects.forEach(System.out::println);
     }
 
@@ -29,12 +32,20 @@ public class ForEach {
             stringObjects.add(this);
         }
 
-        static String generateRandomSentence(){
+        String generateRandomSentence(){
             return getPronoun() + " " + getNoun() + " is " + getQuantifier() + " " + getAdj();
         }
 
-        void replaceHouseToBunny(){
+        void changeHouseToBunny(){
             text = text.replaceAll("house", "bunny");
+        }
+
+        void removeUndersores(){
+            text = text.replace("_", " ");
+        }
+
+        void replaceSpaceWithDoubleColon(){
+            text = text.replace(" ", "::");
         }
 
         static RandomPronouns getPronoun(){

@@ -101,6 +101,50 @@ public class ThreeHundredLambdas {
             lambdaHeroes.add(hero40);
         LambdaWarrior hero41 = overlord -> overlord.attackOverlord(meleeAttack());
             lambdaHeroes.add(hero41);
+        LambdaWarrior hero42 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero42);
+        LambdaWarrior hero43 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero43);
+        LambdaWarrior hero44 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero44);
+        LambdaWizard hero45 = (spell, army) -> castAoeSpell(spell,army.undeadSoldiers);
+            lambdaHeroes.add(hero45);
+        LambdaWarrior hero46 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero46);
+        LambdaWizard hero47 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero47);
+        LambdaWizard hero48 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero48);
+        LambdaWizard hero49 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero49);
+        LambdaWarrior hero50 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero50);
+        LambdaWizard hero51 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero51);
+        LambdaCleric hero52 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero52);
+        LambdaWizard hero53 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero53);
+        LambdaWizard hero54 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero54);
+        LambdaWizard hero55 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero55);
+        LambdaWizard hero56 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero56);
+        LambdaCleric hero57 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero57);
+        LambdaCleric hero58 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero58);
+        LambdaWizard hero59 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero59);
+        LambdaWizard hero60 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero60);
+        LambdaWizard hero61 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero61);
+        LambdaWarrior hero62 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero62);
+
+
 
 
 
