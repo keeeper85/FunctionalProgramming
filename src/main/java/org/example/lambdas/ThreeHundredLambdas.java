@@ -203,6 +203,26 @@ public class ThreeHundredLambdas {
             lambdaHeroes.add(hero91);
         LambdaWizard hero92 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
             lambdaHeroes.add(hero92);
+        LambdaWarrior hero93 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero93);
+        LambdaWarrior hero94 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero94);
+        LambdaWizard hero95 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero95);
+        LambdaWizard hero96 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero96);
+        LambdaWizard hero97 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero97);
+        LambdaWizard hero98 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero98);
+        LambdaWizard hero99 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero99);
+        LambdaWarrior hero100 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero100);
+        LambdaWarrior hero101 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero101);
+        LambdaCleric hero102 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero102);
 
 
 
