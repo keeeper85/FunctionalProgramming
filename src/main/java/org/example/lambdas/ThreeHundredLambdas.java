@@ -583,13 +583,49 @@ public class ThreeHundredLambdas {
             lambdaHeroes.add(hero281);
         LambdaWizard hero282 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
             lambdaHeroes.add(hero282);
+        LambdaWizard hero283 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero283);
+        LambdaWizard hero284 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero284);
+        LambdaWarrior hero285 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero285);
+        LambdaWizard hero286 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero286);
+        LambdaWarrior hero287 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero287);
+        LambdaWizard hero288 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero288);
+        LambdaWizard hero289 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero289);
+        LambdaWizard hero290 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero290);
+        LambdaWarrior hero291 = overlord -> overlord.attackOverlord(meleeAttack());
+            lambdaHeroes.add(hero291);
+        LambdaCleric hero292 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero292);
+        LambdaCleric hero293 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero293);
+        LambdaCleric hero294 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero294);
+        LambdaCleric hero295 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero295);
+        LambdaWizard hero296 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero296);
+        LambdaCleric hero297 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero297);
+        LambdaWizard hero298 = (spell, army) -> castAoeSpell(spell, army.undeadSoldiers);
+            lambdaHeroes.add(hero298);
+        LambdaCleric hero299 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero299);
+        LambdaCleric hero300 = ThreeHundredLambdas::buffUp;
+            lambdaHeroes.add(hero300);
 
 
 
 
         standYourGround(lambdaHeroes, armyOfDarkness);
         finalReport(armyOfDarkness, lambdaHeroes);
-        nextHeroes();
+//        nextHeroes();
     }
 
     private static void standYourGround(List<LambdaHero> lambdaHeroes, ArmyOfDarkness armyOfDarkness) {
@@ -638,7 +674,7 @@ public class ThreeHundredLambdas {
         int attackOverlord(int damage){
             lichOverlordHealth -= damage;
             report(Target.OVERLORD, damage);
-            if (lichOverlordHealth <= 0) System.out.println("Cooo!? To niemożliwe! Nikt nie może mnie pokonać!");
+            if (lichOverlordHealth <= 30000) System.err.println("Cooo!? To niemożliwe! Nikt nie może mnie pokonać!");
             return damage;
         }
     }
